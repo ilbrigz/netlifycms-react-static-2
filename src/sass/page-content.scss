@@ -1,0 +1,51 @@
+/* Browser Hacks */
+main {
+  display: block;
+}
+
+/* Body */
+body {
+  font-family: $sans-serif-font;
+  font-weight: 300;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+}
+
+a:not(.mdc-button) {
+  @include mdc-theme-prop(color, primary-dark);
+  font-weight: 900;
+  text-decoration: none;
+}
+
+::selection {
+  background: $mdc-theme-primary-light;
+  // @include mdc-theme-prop(background, secondary-light); Edge bug using var
+}
+::-moz-selection {
+  @include mdc-theme-prop(background, secondary-light);
+}
+
+.post-link {
+  padding: 10px;
+}
+
+/* code */
+pre>code {
+  display: block;
+  padding: 15px;
+  overflow: auto;
+  font-size: 1em;
+  line-height: 1.4em;
+  border-radius: 0.2em;
+  @include mdc-theme-prop(background-color, text-hint-on-background);
+  @include mdc-theme-prop(color, text-primary-on-light);
+}
+
+.nc-Page-logo {
+  color: #c4c6d2;
+  @include mdc-theme-prop(background-color, text-hint-on-background);
+  padding: 40px;
+  height: 'auto';
+  width: 90%;
+}

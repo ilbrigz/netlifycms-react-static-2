@@ -1,0 +1,40 @@
+{
+  "menus": [
+    {
+      "name": "Home",
+      "componentName": "Home",
+      "route": "/",
+      "link": "/",
+      "display": false
+    },
+    {
+      "name": "Posts",
+      "componentName": "Blog",
+      "route": "/blog",
+      "childroute": "/post",
+      "link": "/blog/",
+      "display": true
+    },
+    {
+      "name": "Documentation",
+      "componentName": "Docs",
+      "route": "/docs",
+      "link": "/docs/",
+      "display": true
+    },
+    {
+      "name": "Theme",
+      "componentName": "ThemeColors",
+      "route": "/theme",
+      "link": "/theme/",
+      "display": true
+    },
+    {
+      "name": "About Us",
+      "componentName": "About",
+      "route": "/about",
+      "link": "/about/",
+      "display": true
+    }
+  ]
+}
